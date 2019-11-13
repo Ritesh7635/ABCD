@@ -1,0 +1,55 @@
+Odoo Server Error
+
+Traceback (most recent call last):
+  File "/opt/odoo/odoo/fields.py", line 937, in __get__
+    value = record.env.cache.get(record, self)
+  File "/opt/odoo/odoo/api.py", line 960, in get
+    value = self._data[field][record.id][key]
+KeyError: <odoo.api.Environment object at 0x7fb412629278>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/odoo/Odoo/custom_addons/lead_extends/controllers/http.py", line 184, in _handle_exception
+    return super(JsonRequest, self)._handle_exception(exception)
+  File "/opt/odoo/odoo/http.py", line 310, in _handle_exception
+    raise pycompat.reraise(type(exception), exception, sys.exc_info()[2])
+  File "/opt/odoo/odoo/tools/pycompat.py", line 87, in reraise
+    raise value
+  File "/opt/odoo/Odoo/custom_addons/lead_extends/controllers/http.py", line 226, in dispatch
+    result = self._call_function(**self.params)
+  File "/opt/odoo/odoo/http.py", line 342, in _call_function
+    return checked_call(self.db, *args, **kwargs)
+  File "/opt/odoo/odoo/service/model.py", line 97, in wrapper
+    return f(dbname, *args, **kwargs)
+  File "/opt/odoo/odoo/http.py", line 335, in checked_call
+    result = self.endpoint(*a, **kw)
+  File "/opt/odoo/odoo/http.py", line 937, in __call__
+    return self.method(*args, **kw)
+  File "/opt/odoo/odoo/http.py", line 515, in response_wrap
+    response = f(*args, **kw)
+  File "/opt/odoo/addons/web/controllers/main.py", line 934, in call_kw
+    return self._call_kw(model, method, args, kwargs)
+  File "/opt/odoo/addons/web/controllers/main.py", line 926, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/opt/odoo/odoo/api.py", line 687, in call_kw
+    return call_kw_model(method, model, args, kwargs)
+  File "/opt/odoo/odoo/api.py", line 672, in call_kw_model
+    result = method(recs, *args, **kwargs)
+  File "/opt/odoo/Odoo/custom_addons/website_crm_score/models/calendar_event.py", line 117, in create
+    'activity_json_data':json.dumps(data)
+  File "/opt/odoo/odoo/models.py", line 3372, in create
+    record = self.browse(self._create(old_vals))
+  File "/opt/odoo/odoo/models.py", line 3529, in _create
+    self.recompute()
+  File "/opt/odoo/odoo/models.py", line 4904, in recompute
+    vals = {n: rec[n] for n in ns}
+  File "/opt/odoo/odoo/models.py", line 4904, in <dictcomp>
+    vals = {n: rec[n] for n in ns}
+  File "/opt/odoo/odoo/models.py", line 4758, in __getitem__
+    return self._fields[key].__get__(self, type(self))
+  File "/opt/odoo/odoo/fields.py", line 944, in __get__
+    value = record.env.cache.get(record, self)
+  File "/opt/odoo/odoo/api.py", line 960, in get
+    value = self._data[field][record.id][key]
+KeyError: <odoo.api.Environment object at 0x7fb412629278>

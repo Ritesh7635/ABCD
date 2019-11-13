@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="67b8c550-76e8-4de0-b1d4-0f8efe15b20c" activeEnvironment="Default" name="Assessment JEE API updated" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="68f7043c-bfe2-492c-aa28-2b93f1d8c3b5" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://test.emsccv3.extramarks.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint></con:endpoints><con:resource name="Jeeadvance" path="/school_lms/public/api/v1.0/jeeadvance" id="16cf61c2-0775-454f-9191-35e5545f823d"><con:settings/><con:parameters/><con:method name="Jeeadvance 1" id="337f1fdd-7881-4d36-8ce2-309a547fdb88" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:jee="http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance">jee:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/problem+json</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:jee="http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance">jee:Fault</con:element></con:representation><con:request name="Weekly Test Upcoming Paper List API" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Weekly Test Dashboard API" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="jeetest" path="/school_lms/public/api/v1.0/jeetest" id="5d54dec9-e632-43f0-97e7-c0a0695dfc8f"><con:settings/><con:parameters/><con:method name="Method 1" id="771ada20-4d65-4712-bf09-10d7d0d5157d" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:jeet="http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeetest">jeet:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Upcoming paper list" id="c84fe944-53b5-4df9-bc3d-f44d33efe4a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"upcoming_paper_list",
+	"paper_type":10,
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeetest</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Weekly test dashboard" id="c84fe944-53b5-4df9-bc3d-f44d33efe4a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeetest</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="student-dashboard-api" path="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" id="37ae3369-ba33-42e6-8fdf-8703beb1271e"><con:settings/><con:parameters/><con:method name="Method 1" id="cb28520b-47a0-4d06-b791-06dfca99475c" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:log="http://test.emsccv3.extramarks.com/school_lms/public/../../schoolerp/default/login">log:Response</con:element></con:representation><con:request name="Request 1" id="a01df74c-2a63-44f6-9b35-6e1bbb9ba660" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"type":"dashboard",
+	"paper_type":10,
+    "checksum":"969230a4b7423efdb366641a6af61916"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/../../schoolerp/default/login</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="student-dashboard-api" path="/school_lms/public/assessnew/apiVersion1/student-dashboard-api" id="dd95f1a4-6fcf-433a-964c-f1b3ce2bdf64"><con:settings/><con:parameters/><con:method name="Method 1" id="ea976db2-2ffd-4bd7-8729-e790a9f73313" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:log="http://test.emsccv3.extramarks.com/school_lms/public/../../schoolerp/default/login">log:Response</con:element></con:representation><con:request name="Request 1" id="9f62cfd4-487e-45ae-82de-a8892f7916a9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"paper_type":10,
+    "checksum":"68750f2a2fa04d94ac6c887d5df9ac01"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/../../schoolerp/default/login</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="375ccadd-80ca-4b6d-a964-936ce16bef6f" name="JEE Advance-Weekly Test Upcoming Paper List API"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a97b9062-71e7-46fe-9075-191b1558be31" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Happy path" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="815b6d8b-ecad-4caa-9118-e3a0bc99206a"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="b2d16841-fbc2-4517-beef-58695a961670" name="Contains"><con:configuration><token>status</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="34a3dba7-cabc-4ac7-be34-13b464097a39" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ef6ba723-9600-41b1-a83a-d7264c5a7432" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without user id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="a0ef9913-6419-434e-b567-4525a34c9d8a"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="140d08bd-2493-4500-9ed7-420cfb1662cc" name="Contains"><con:configuration><token>Please pass student id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="33eadfc0-5871-4697-a254-17d271d80b0e" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="06f71302-ea0e-48aa-b29b-f98485068d59" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="0ccc84f4-c4e5-4b87-868d-6d706929d71c"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="64e866f1-d092-4170-8c0b-489471c80502" name="Contains"><con:configuration><token>Please pass student type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="ea222e9e-094d-4c4c-98fe-ec1f097e5ba4" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f599b8a7-ddfe-459e-9626-a12f9ceab86a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without board id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="ec3796af-c6d8-4f45-b68b-3a6b537ef472"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="cc49dd35-dc04-4355-9b90-0205c6049a5e" name="Contains"><con:configuration><token>Please pass the board.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="280b689c-70cc-43de-b169-3c3f885f436a" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9e4e25a2-69c4-4b78-8b63-e1fda6df0e5e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without class id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="4182320f-97b8-4858-9a77-30182305496b"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="6bb5363c-dd95-4d9a-85dc-7644dde8267c" name="Contains"><con:configuration><token>Please pass the class.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="51d7332b-fcbb-4a17-b0e1-bc961147728c" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="79da493a-7f8f-4f37-b594-8219b915b844" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without course flag" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="afb9c79c-df90-4550-ae0d-ef82899b2045"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="4f19dba7-2d73-4b79-9d33-58fa3f07513c" name="Contains"><con:configuration><token>Please pass the course.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="684b801d-1116-4292-b0f6-7123740d26aa" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ed735336-fbbb-4e57-b9ea-76bb80b0a6c6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without course mode" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="927b5a5c-fdbe-45da-b5cd-507b17decb08"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="f36712cc-789d-4688-98a9-515cdf39d4b5" name="Contains"><con:configuration><token>please enter course mode id.
+</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="c5caf16a-904d-44cb-9402-e4fc6b27a2c8" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="45bb1f9d-2e34-40a3-9982-8ae9ca5a4a12" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without batch start id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="a1f6d172-2967-4662-b39b-3165ab30cae0"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="618e379c-a62b-43c8-b4e9-0681a825d57e" name="Contains"><con:configuration><token>please provide batch start date id
+</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="a52022bd-9d8d-4280-84b2-c8b461310301" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c42ed04c-4807-433c-aebf-8897451ff24b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without action" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="c4d52596-1746-4888-82e5-d1fbc881f59f"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="1f788a6d-408f-4984-bb86-7b66e17e361c" name="Contains"><con:configuration><token>Please provide action.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="9c6cf650-c689-4c73-9425-3770b3ecbec3" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4bf49763-7092-4a5a-931d-73872587f5a2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without papertype" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="dc182ad6-66c2-482b-91c6-77e98add0139"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="b083f195-b4c1-41f1-b683-14909ce51c55" name="Contains"><con:configuration><token>Please provide paper type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="e7d29668-fca6-44e7-8c76-2ecfdb46cbf2" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="02fe10ed-8ce6-4bc4-b506-fa75d551e0f5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without checksum" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="b5073650-d8c3-442a-97b4-4917fc85b683"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10
+	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="08bfd8cb-ed61-4a3c-ab48-276fe5df46c7" name="Contains"><con:configuration><token>Please provide checksum.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="8f064d4b-7c79-4c4f-8535-a6e5f29a7be0" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0c59c5bc-1c62-4acd-9649-e398fa412fe2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid userid" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="3d0419bd-610a-400b-9d53-20ad0d60f8c7"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : "xd14029919",
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="4d1c5ad8-3cc7-4fce-a886-8e1788131795" name="Contains"><con:configuration><token>Please pass student id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="e465ca48-ecce-4a2b-a589-5fbe993a4614" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d97877a5-a68a-41dc-ae9f-c65fae2a3bab" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="8af76a72-c078-4f60-95a4-70ff7a18b0a4"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : "xd2",
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="a05d32f5-b3c1-4cae-a608-d911af47ebf9" name="Contains"><con:configuration><token>Please pass student type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f25f072c-5a7f-4755-809c-1516433465b6" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="3006cddb-2e4d-4dfb-89fc-d833f3a46e2b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid board id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="e673a84a-3a94-404e-ae12-cb3ada570eab"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : "lk439", 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="053ea3cd-801a-4df8-844d-d562c777c645" name="Contains"><con:configuration><token>Please pass the board.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="53f02351-b79d-48a6-85d3-6dc71dbf5ff7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a56de7de-2e73-4fce-a978-c0871be20381" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid class id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="b767b75c-4618-458e-b53a-c2a8eac09d4e"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : "mk425766",
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="3b68e53e-2e9b-4433-a97d-f5451c6630f5" name="Contains"><con:configuration><token>Please pass the class.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d1edd1b2-40e7-4b3b-bb25-b68be4a9fd42" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="aa09d5e9-b8fd-49fa-b69a-9e7756061b1c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid course flag" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="f9e15149-3099-44cc-b352-044b06cabfee"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": "k2",
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="3f0548bc-0c4a-4fc3-a081-7b32fbd3eb47" name="Contains"><con:configuration><token>Please pass the course</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="df478f6d-f001-4692-b56b-ca6c2ce0d15d" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ac6953ec-a88e-48d0-aafd-42fa404d45f6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid course mode" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="95dc4019-b84e-4de4-92ea-2bf20bad46d9"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : "x1",
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="813a8292-4387-4f5b-86a5-0cfb3ed7241b" name="Contains"><con:configuration><token>Please provide valid course mode id.
+</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="46de77a8-6444-40f1-bb92-3491b17c9f56" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8fb24eb5-5e2f-453c-9935-3fe5f00aa07b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid batch start id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="ad685f66-83bc-4e68-9ae5-261e43bb5a22"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : "x2",
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="1831ed80-e14c-4379-831c-0adb2baa9bf8" name="Contains"><con:configuration><token>please provide valid batch start id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d54a8175-806a-49f8-a289-2ad1c09fe8d5" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5ee72d5f-8011-4a5e-96b9-633304306d54" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid action" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="963a1e0b-d1dc-4b31-993b-d1ef4f38ab1d"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "12upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="33f96178-25c1-47fd-a929-4b9f17427765" name="Contains"><con:configuration><token>Please provide valid action.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="69042883-a9b8-4195-95c6-b6e83d68056c" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8d79ce81-b4a0-405d-9807-0bf6fa193b39" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid papertype" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="8c10419e-0dae-4647-bf7d-18eae5becd4f"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : "s10",
+"checksum":"379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="f25e4be7-63ac-4365-87ef-a0826eb68384" name="Contains"><con:configuration><token>Please provide valid paper type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="8a418191-a26c-4222-8a22-ed67484d2495" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="20039d5e-518c-47b6-8c87-3520ceea2d69" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid checksum" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="11e172b7-379c-4088-88b4-bb8070351b85"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+"user_id" : 14029919,
+"student_type" : 2,
+ "board_id" : 439, 
+"class_id" : 425766,
+"course_flag": 2,
+"course_mode_id" : 1,
+"batch_start_date_id" : 2,
+"action": "upcoming_paper_list",
+"paper_type" : 10,
+"checksum":"12379abffea3473789a4d0d5d901e886ea"	
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="fe222448-f68b-4535-a3a1-a746ea464f38" name="Contains"><con:configuration><token>Enter valid Checksum Key.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="be3d4629-b4a9-4722-98c8-9ff898de8d49" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="702d3562-e99b-48c3-bc3a-53b2b88449b9" name="JEE Advance-weekly Test Dashboard API"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="6acd3d26-ea46-4d8a-b226-91e7d52e949b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="happy path" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="066d7653-5e14-48dd-b0be-164c9c5de8b4"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="21764aa0-28ce-4e87-ac42-af15720a2532" name="Contains"><con:configuration><token>status</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d47d08f7-10af-4c7d-a441-cd31d62fb39d" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4833965f-4179-45d1-90ff-4c6483860f85" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without user id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="ef5efb9d-e9bc-41e8-b0dd-6e0f0ec7292e"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="4f8e081f-6a19-4948-a72e-afbe73c91eb9" name="Contains"><con:configuration><token>Please pass the userid.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f8a31229-c9a8-4254-8b8c-02f7b481959b" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d3891b69-0303-44ca-b6ea-30940af063aa" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="243e920b-fc95-418f-a9ea-534b6e86cec5"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="88564ba2-7ddb-411a-9db1-3fe7e1810026" name="Contains"><con:configuration><token>Please pass the student type</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d97d1ff5-b698-43cf-bc76-eaddf1202530" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="76e5340e-35ca-49e4-bed2-9468ace67910" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without board id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="65d6f954-c877-422a-9d93-39d139052f8b"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="54b3b7f4-95ce-4453-8e9b-2abbbf2bbcac" name="Contains"><con:configuration><token>Please pass the board.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="cdf7e61f-480d-4909-a3d7-3b25338b9e04" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f3404668-2013-45c5-b039-b3c1c86bec84" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without class id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="3769d4b4-af7d-4e7e-ae8f-ece609eb2887"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="b4308167-9fe0-4a6a-a82d-ecee7aa2b035" name="Contains"><con:configuration><token>Please pass the class.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="e782d3d0-6578-4ed1-8988-2dd4aa94ba70" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="46436985-cd8a-4cc6-a74c-411dd193be21" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without action" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="7df4416c-dd01-4824-a0db-a50455cd293e"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="3c75430a-b120-4fcf-9d1f-51cd4d26547d" name="Contains"><con:configuration><token>Please provide action.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="30b51418-1b0b-49ba-b197-702ef82631e9" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="27fd6a55-0b67-4101-aa77-c295b17246e3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without course flag" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="522c78a8-d7a1-43f9-93cf-0f2053aa3873"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="e3004b1a-750d-4ef0-bd2b-30eacf38cfcb" name="Contains"><con:configuration><token>Please pass the course flag.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="56b2235b-43fb-42ca-b47b-c1276cfec849" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9e818b2b-ccd1-4e43-9e51-1de29c5b8632" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without course mode" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="d8538f9c-a647-4b60-9608-4b4d2b793982"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="7e893ac1-e8cc-41b6-8752-3d8a8f26a1a6" name="Contains"><con:configuration><token>please provide course mode id.</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="9a397021-9c4e-45b2-b1f9-55339873851b" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="cd2a3148-177b-49c5-b578-96bf27451474" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without batch start date id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="e1e94ee7-f007-488c-90f5-6223ed93cf8f"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="9e105fc8-fb61-4cef-ba41-456eaab198ff" name="Contains"><con:configuration><token>please provide batch start date id
+</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="6caf803a-9a37-4c7c-bebb-9cc5ecd134d8" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="79f4dba7-c219-44c8-abf9-7489b3895ff0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without paper type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="022ea536-d9e2-43ae-8863-3165b8014392"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="3cf68e8b-036c-4c95-9a0d-c85dae7f113f" name="Contains"><con:configuration><token>Please provide paper type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="ea00ed5b-d1e3-4935-b9ff-125a1c2ef6d7" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="7ded8fef-7dcb-4784-a434-45f21c762b36" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid user id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="aef651c4-ee83-4b8d-8c5f-29c5ee6b4457"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"as14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="c5b13d79-9225-4efc-832d-d45e4bbb943d" name="Contains"><con:configuration><token>Please pass valid userid.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="43b77f17-1066-481e-802b-4166b151b2e8" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="090c5d7f-9905-4893-8626-3c57272820d3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="8944351f-3c87-46ef-b57e-ef6b6eac2278"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":"od",
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="4659e30d-4dff-4283-a678-327a6d72420b" name="Contains"><con:configuration><token>Please pass valid student type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="66c09a75-a297-42ee-9f27-af96967a923d" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0dbf08d7-4229-4876-9081-d91b354c4c8f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid board id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="00ba9ffd-1874-46e9-a890-f4997492bdc4"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":"xx439",
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="d7cae12f-4ef1-4aa5-a9fb-dc26f7b10202" name="Contains"><con:configuration><token>Please pass valid board.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="a06d9e55-2efb-4266-af97-c8b6805eb74b" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1303922d-6413-40c6-86c2-f2f495f43271" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid class id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="e2273a42-e69e-4fad-9c65-1aef36bfb16d"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"aas425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="a1269e34-0d1b-4caa-9bdc-fc336971455a" name="Contains"><con:configuration><token>Please pass valid class.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="0d3a493e-a069-40e8-b2d0-e63df097de77" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="483ebb95-b3ac-4b28-8d53-4284c8935065" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid action" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="4f123074-a53c-4071-ac57-d60c8cdccd2b"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"12weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="8642757e-5282-4224-8da3-a00377f61588" name="Contains"><con:configuration><token>Please provide valid action.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="3ebe051d-97b3-4c8c-a5f4-667d66cd730a" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b50430b6-32e0-42df-8956-821c707912e4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid course flag" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="9e78cd8f-4f57-4e82-920b-aa2edc375978"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : "dd1",
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="a792eb29-7bff-4c38-af4d-b69d61ed0233" name="Contains"><con:configuration><token>Please pass valid course flag.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="e8fdc60a-1636-44cb-b8f1-d66cf2549f02" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d7af8d76-79cb-441c-9a09-64352a239838" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid course mode" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="c882f704-ba1e-4c56-b43b-e166f2bc1871"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":"cc1",
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="40141ee6-5df7-404e-8ba0-d4a9db83fd34" name="Contains"><con:configuration><token>please provide valid course mode id
+</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="7213efca-7dba-436e-b338-1469a1d0961f" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5eb48620-668a-4510-ad92-85ea75d49d42" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid batch start id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="f865c7c6-e0f3-4d61-8d85-d74ac01e5f0e"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":"ii2",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="de394cb5-3724-4ee5-8720-c4726f59479a" name="Contains"><con:configuration><token>please provide valid batch start date id
+</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="cc51106d-8d10-4928-a077-dbd601bc9020" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="305d6be1-5b68-4857-bfa7-a6ac1e07c9f0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid paper type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="b249fe72-213e-4576-8ec5-a4e1d49abb30"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeeadvance" methodName="Jeeadvance 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"course_flag" : 1,
+	"course_mode_id":1,
+	"batch_start_date_id":2,
+	"action":"weekly_test_dashboard",
+	"paper_type":"jhj10",
+      "checksum":"d237056ec24b57f2fbc553cac39f2cfa"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="c6d5b678-7994-4414-ac1a-ff93533cee68" name="Contains"><con:configuration><token>Please provide valid paper type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="61d311b6-5b0a-445e-9513-193b2ef2348e" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="8d06ecb9-49ee-4a56-a88a-96c0c33cbc41" name="JEE TEST- Weekly Test Dashboard API"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="68ab749c-ed17-41fd-9e09-c68f8b34dac5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="happy path" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="76d64844-e704-4254-a8ba-74196e824502"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeetest" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="abf07f50-8f56-4837-a4df-327518fee896" name="Contains"><con:configuration><token>status</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="bfd4bbc9-c5ea-443c-a52b-ff68f36efa1a" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="27b84d89-3386-4398-8db0-c5cdfb354a38" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without user id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="98831199-a652-4925-9db9-ad1ddc2fcd79"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="4f8e081f-6a19-4948-a72e-afbe73c91eb9" name="Contains"><con:configuration><token>Enter valid student id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f8a31229-c9a8-4254-8b8c-02f7b481959b" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8773517e-4936-404a-b683-a979ff7439c7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="9c8e76e2-4364-4728-8ba9-a0f625e7f22e"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	
+	"board_id":439,
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="88564ba2-7ddb-411a-9db1-3fe7e1810026" name="Contains"><con:configuration><token>Enter valid student type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d97d1ff5-b698-43cf-bc76-eaddf1202530" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4771fa51-501d-4d38-bdba-d53aac3cdcbb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without board id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="ee820f9c-6ec0-420b-8546-9ee9a59ac2e0"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="54b3b7f4-95ce-4453-8e9b-2abbbf2bbcac" name="Contains"><con:configuration><token>Enter valid board id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="cdf7e61f-480d-4909-a3d7-3b25338b9e04" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6dc8d374-553c-4ac1-9605-f4378011e304" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without class id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="58826fb1-ac26-45a8-a50d-7965db639100"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="137d9a7e-0ec6-499d-a961-d1752e9dc6b4" name="Contains"><con:configuration><token>Enter valid class id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="799be2c6-99e6-4f0a-8fb1-6d3a3026b33f" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8036cc65-89b6-4027-8606-df5586059d9c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without action" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="4bc8f1db-322f-49ae-b07e-cf6be45e4d52"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="3c75430a-b120-4fcf-9d1f-51cd4d26547d" name="Contains"><con:configuration><token>Please provide valid data!</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="30b51418-1b0b-49ba-b197-702ef82631e9" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4f548296-04f2-41f9-bfc7-1231fd3308d2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without papertype" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="3605246e-459b-4b6d-a789-c01f83246257"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="64ff1226-7e89-4a06-a1f3-fc9b42a42a82" name="Contains"><con:configuration><token>Enter valid paper type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d4c48a82-3081-49bd-8e7e-9f58e858d448" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b2f5a74b-fd52-48b3-9356-8515a669ad53" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without checksum" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="ff5f92a6-51c1-4d74-b9be-b574636b8bcb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid user id" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="0f7d15f9-0aa5-4a56-bc49-f4a22f51adb4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="1f14bde3-a4c8-4137-a1d9-ec27b1ea9ec6"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeetest" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":"d2",
+	"board_id":439,
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="42951f21-1368-4915-b903-39fdfc8941b3" name="Contains"><con:configuration><token>Enter valid student type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="44608512-35b4-49b6-b6fc-92a1d356dc3c" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="7e4b902e-f8b9-433a-af2d-1ccc9eb88b2d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid board id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="fd696f19-2315-4ee2-a450-2a53609db152"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":"d439",
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="f6a5483e-349d-4f70-97d0-ae614f7d411b" name="Contains"><con:configuration><token>Enter valid board id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="12bc547c-c4af-47e2-8db8-319625140a43" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="47df5e13-3f9a-45aa-a879-8a4e17c12e06" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid class id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="d104b541-f88b-4e4f-b543-d09bd598c9f0"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"1ww425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="251d6613-a0e0-40dd-b447-ef056d0dc1d2" name="Contains"><con:configuration><token>Enter valid class id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="714b271b-bf84-4246-948a-f9dbe793820d" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5dcf30a1-3952-4831-b088-fe32c7984b22" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid action" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="3b9be311-584f-4712-a832-ee49b56ae650"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"122weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="1e161b5a-ca2e-4c3e-8d88-3ebb212915ff" name="Contains"><con:configuration><token>Please provide valid action
+</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="939f73f0-970c-448a-9a44-8917f31c0d3f" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="be7a30f5-cafd-4325-9843-232595871dff" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid papertype" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="3fd9ecb9-4583-4c39-abb9-922da194a06d"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":"xsx10",
+    "checksum":"ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="e9fe3063-0cb4-4135-824c-93534a2e09a4" name="Contains"><con:configuration><token>Enter valid paper type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="e0c67994-b4ec-44da-ba9a-0c8d570dd674" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a2268d73-c1f9-4c3b-8ddc-ee676f5ac5e4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid checksum" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="acb8d45c-72de-47ce-a29d-3d091f9fee2f"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"weekly_test_dashboard",
+	"paper_type":10,
+    "checksum":"12ac6fa27d9d09674173f746f31eb0e5ee"
+}
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="d3828dc9-58d5-406a-8545-854d18824fdd" name="Contains"><con:configuration><token>Enter valid Checksum Key.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="c6b782a7-22dc-432d-9233-0b449e1542aa" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="aff1892f-2f88-4599-8ee0-42d1090510af" name="JEE TEST-Weekly Test upcoming paper list API"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="da49b748-3cd3-4568-a265-3e3e101ee934" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="happy path" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="71b43f3f-98de-41d5-8fbb-77f527919c05"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/api/v1.0/jeetest" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"upcoming_paper_list",
+	"paper_type":10,
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="f4485e0b-f3a7-4685-85b6-fbdad439dcc9" name="Contains"><con:configuration><token>status</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="4b317d60-cc8f-4e5b-9ccb-553b7ee25c8e" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="04b44259-24d2-407e-932c-69c8ac40675b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without student id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="9eda978e-3ae0-40bc-98fb-092e7cd4fc80"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"upcoming_paper_list",
+	"paper_type":10,
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="4f8e081f-6a19-4948-a72e-afbe73c91eb9" name="Contains"><con:configuration><token>Enter valid student id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f8a31229-c9a8-4254-8b8c-02f7b481959b" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0b4dff70-a800-4608-99d9-2cbb58108087" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="6e580e6d-aee8-4940-9c92-5133911ff5ee"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	
+	"board_id":439,
+	"class_id":"425766",
+	"action":"upcoming_paper_list",
+	"paper_type":10,
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="88564ba2-7ddb-411a-9db1-3fe7e1810026" name="Contains"><con:configuration><token>Enter valid student type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d97d1ff5-b698-43cf-bc76-eaddf1202530" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d9a50ab9-ba27-4dea-aa75-c44e7bbc254f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without board id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="49a8e022-4c4a-43ca-ad75-3cbdedba1246"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	
+	"class_id":"425766",
+	"action":"upcoming_paper_list",
+	"paper_type":10,
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="54b3b7f4-95ce-4453-8e9b-2abbbf2bbcac" name="Contains"><con:configuration><token>Enter valid board id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="cdf7e61f-480d-4909-a3d7-3b25338b9e04" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="dcc2d3fc-8943-4baa-8ff4-857097a5ddaa" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without class id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="11048cc8-50b8-4626-8da7-0335305fe279"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	
+	"action":"upcoming_paper_list",
+	"paper_type":10,
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="137d9a7e-0ec6-499d-a961-d1752e9dc6b4" name="Contains"><con:configuration><token>Enter valid class id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="799be2c6-99e6-4f0a-8fb1-6d3a3026b33f" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b38d0f44-3a85-4fbf-8b08-e7a2c190f23c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without action" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="42fecbfd-28ba-41c5-a996-52a296f407b0"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	
+	"paper_type":10,
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="3c75430a-b120-4fcf-9d1f-51cd4d26547d" name="Contains"><con:configuration><token>Please provide action</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="30b51418-1b0b-49ba-b197-702ef82631e9" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="67481923-56d4-4134-9b3a-020534ffebbc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without papertype" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="15a4948c-8382-4f02-bfe7-8180a245c4bb"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"upcoming_paper_list",
+
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="64ff1226-7e89-4a06-a1f3-fc9b42a42a82" name="Contains"><con:configuration><token>Enter valid paper type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d4c48a82-3081-49bd-8e7e-9f58e858d448" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="28a25a2b-5711-45cb-a5a3-076eb25f9603" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without checksum" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="238bb012-d70e-4595-bf29-a82aa075810b"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"upcoming_paper_list",
+	"paper_type":10
+   
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="18d80cfa-6c01-47c8-bf74-6bd4d76a4313" name="Contains"><con:configuration><token>please enter checksum.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="c959b7b8-745e-4b1d-aa35-8c2c101633ef" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2594afbd-c973-402a-a0d0-722773d879ab" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid user id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="81b82bc5-e4df-4535-8e5f-ef3e3467b6bd"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"qw14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"action":"upcoming_paper_list",
+	"paper_type":10,
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="34a7bec4-575f-47fd-acad-24e6fc4b4bb9" name="Contains"><con:configuration><token>Enter valid student id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="d92bb862-cf87-4751-87b6-bd44c79db73f" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="38db407a-11a3-4576-8401-cce9523bc3c6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="0836905f-3ccc-4465-90cb-77115bbbde9d"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":"hb2",
+	"board_id":439,
+	"class_id":"425766",
+	"action":"upcoming_paper_list",
+	"paper_type":10,
+    "checksum":"2cf31903fcf8e56ad01383f035483c6b"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="42951f21-1368-4915-b903-39fdfc8941b3" name="Contains"><con:configuration><token>Enter valid student type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="44608512-35b4-49b6-b6fc-92a1d356dc3c" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b9230062-57a3-4a1b-b4cc-7d539ffbde81" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid board id" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="cc636c55-fc69-48e6-8f4d-2ec41422a2d3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid class id" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="e0f96d5c-114e-4859-9d41-3ceaf9d25396" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid action" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="0e5bb033-1757-4acb-abb2-8e6f41407642" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid papertype" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="aa1eb963-69dd-4c68-8adb-8a18d7ee4e62" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid checksum" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="83baedee-b243-4e02-8502-058c1b4f2ab3" name="Student- Weekly Test dashboard API"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="626ba8ad-c66f-4312-8fc6-be3e6bf3511f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="happy path" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="1da37cce-7df6-4c75-be4e-fb827d1e98d4"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"type":"dashboard",
+	"paper_type":10,
+    "checksum":"969230a4b7423efdb366641a6af61916"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="2d9f00f4-7aec-4676-881a-28bf5e5c07d3" name="Contains"><con:configuration><token>status</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="e841434e-ac34-4166-87c4-0bc08a681889" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f3043bc9-cdb9-4a92-9c20-e99248207acf" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without user id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="91bfa277-9977-42b9-a98e-c6f259f87d21"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"type":"dashboard",
+	"paper_type":10,
+    "checksum":"969230a4b7423efdb366641a6af61916"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="4f8e081f-6a19-4948-a72e-afbe73c91eb9" name="Contains"><con:configuration><token>Enter valid student id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f8a31229-c9a8-4254-8b8c-02f7b481959b" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="669a70ef-bcf7-4661-bf6d-b41a17b8c42d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="f231e50d-6ff4-416c-a26d-707c4e58b033"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	
+	"board_id":439,
+	"class_id":"425766",
+	"type":"dashboard",
+	"paper_type":10,
+    "checksum":"969230a4b7423efdb366641a6af61916"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="a335124b-dfe6-4fbe-bae2-516853060a76" name="Contains"><con:configuration><token>Enter valid student type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f66b67ec-5ec9-4c73-8b7b-26017b6ceed3" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f43a3d1e-02a9-40ef-9ca8-08525f0016de" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without class id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="5367333b-b8ef-400c-b168-8314f7bfda61"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	
+	"type":"dashboard",
+	"paper_type":10,
+    "checksum":"969230a4b7423efdb366641a6af61916"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="0325dacb-0cee-4154-b0c1-6e96805001cb" name="Contains"><con:configuration><token>Enter valid class id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="1e0457d9-5898-4b7e-a746-c9b47fefe959" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="97dea8d2-6dcf-4138-aec1-3b6f016b47cc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without board id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="66a5aa11-091c-424f-93a2-0d3f1609e4e8"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	
+	"class_id":"425766",
+	"type":"dashboard",
+	"paper_type":10,
+    "checksum":"969230a4b7423efdb366641a6af61916"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="d332bb48-4fa9-417e-8abe-c254f984215a" name="Contains"><con:configuration><token>Enter valid board id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b9b645b9-ab23-440f-ab4d-6f85067863ee" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="55ddb06b-ff78-4cf6-95fd-9be476b1e03e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without papertype" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="94fe90e6-751e-4283-bfb6-0bef57e58369"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"user_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"type":"dashboard",
+	
+    "checksum":"969230a4b7423efdb366641a6af61916"
+}
+
+
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="c480684c-da2a-4d9c-8340-e1a23f1a9ca7" name="Contains"><con:configuration><token>Enter valid paper type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="85360fe7-b65c-46d9-b2c7-d210e964f55c" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="57f2df0f-bb23-4fb0-be6d-f1396bfb7704" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without checksum" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="3cc60282-23d9-4bc8-9f6d-c2ab89fec2c9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without type" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="eeb81539-cc0f-4c95-90bb-c8fb68d80b30" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid user id" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="834d0274-0dd3-4dad-85e0-a89ae9da54e1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid student type" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="7361c976-93f5-4641-bec9-4da900d4e60e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid class id" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="e6c46d9e-a819-44ba-b028-5a2e1236d5c1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid board id" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="6ce0dc37-c297-4aa0-94d9-7f64cc6dff36" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid papertype" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="cd15b04c-b86f-49cc-a464-de4d49a40fd0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid checksum" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="78f5732c-898e-4055-98be-1c0a91aa6349" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid type" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="a7c833fe-a645-4fe8-b515-bc23765c6792" name="Student- Weekly Test upcoming paper list API"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="ca4b2bab-6d29-4244-b63b-a32c0eb64bca" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="happy path" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="eff2c265-998e-4b3f-bcc4-658ea7fb9133"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/student-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"paper_type":10,
+    "checksum":"68750f2a2fa04d94ac6c887d5df9ac01"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="2d9f00f4-7aec-4676-881a-28bf5e5c07d3" name="Contains"><con:configuration><token>status</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="e841434e-ac34-4166-87c4-0bc08a681889" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="3ea79e5a-fde8-4634-b46f-bddb10be5e8d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without user id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="31d36312-b4ef-493a-bef9-60ba085ed10e"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	
+	"student_type":2,
+	"board_id":439,
+	"class_id":"425766",
+	"paper_type":10,
+    "checksum":"68750f2a2fa04d94ac6c887d5df9ac01"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="4f8e081f-6a19-4948-a72e-afbe73c91eb9" name="Contains"><con:configuration><token>Enter valid student id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f8a31229-c9a8-4254-8b8c-02f7b481959b" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="67941813-ac90-430b-ad11-63004d4cee81" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without student type" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="cc9ca198-ba19-4ac4-8828-134cc0d876f1"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	
+	"board_id":439,
+	"class_id":"425766",
+	"paper_type":10,
+    "checksum":"68750f2a2fa04d94ac6c887d5df9ac01"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="a335124b-dfe6-4fbe-bae2-516853060a76" name="Contains"><con:configuration><token>Enter valid student type.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f66b67ec-5ec9-4c73-8b7b-26017b6ceed3" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a6ec584c-92bd-4e3b-acfc-61d3e2523db9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without class id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="4f1e783e-5b56-4f1b-84ed-962fd7d773d4"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	"board_id":439,
+	
+	"paper_type":10,
+    "checksum":"68750f2a2fa04d94ac6c887d5df9ac01"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="0325dacb-0cee-4154-b0c1-6e96805001cb" name="Contains"><con:configuration><token>Enter valid class id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="1e0457d9-5898-4b7e-a746-c9b47fefe959" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c945d279-9bb4-46e8-a0ed-8bc22b4457ee" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without board id" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="01f05462-2578-4ef9-9545-b63fd0574e95"><con:settings/><con:config service="http://test.emsccv3.extramarks.com" resourcePath="/school_lms/public/assessnew/apiVersion1/weekly-test-dashboard-api" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="e5c2c927-e055-411f-924c-da59906b7998" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://test.emsccv3.extramarks.com</con:endpoint><con:request>{
+	"student_id":"14077268",
+	"student_type":2,
+	
+	"class_id":"425766",
+	"paper_type":10,
+    "checksum":"68750f2a2fa04d94ac6c887d5df9ac01"
+}
+</con:request><con:originalUri>http://test.emsccv3.extramarks.com/school_lms/public/api/v1.0/jeeadvance</con:originalUri><con:assertion type="Simple Contains" id="d332bb48-4fa9-417e-8abe-c254f984215a" name="Contains"><con:configuration><token>Enter valid board id.</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="b9b645b9-ab23-440f-ab4d-6f85067863ee" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d903c9f6-5077-40f0-a703-f3e494f17142" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without papertype" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="ecf97014-c415-4a67-a911-46557529e12b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="without checksum" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="3bb0b0a5-6e50-42ff-80ad-bdf138eba309" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid user id" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="41559644-804d-482d-b5f8-514157e58200" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid student type" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="49a11620-08f8-4aca-9eb4-d977a36c322c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid class id" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="1fcc4c91-2f5b-4ac0-ac2a-8c25d81d2f6e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid board id" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="92b40c27-7965-4a1d-a105-1c7d070040c6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid papertype" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:testCase id="a41dbf62-9a6b-4abe-b7d0-1c368763a68a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="invalid checksum" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

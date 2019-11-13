@@ -1,0 +1,17 @@
+student_id.':'.student_type.':'.board_id .':' .class_id. ':' .paper_type.':'. salt . ':' . api_key
+
+14077268:2:
+
+
+
+
+
+Request
+ 
+Type: 'application/json'
+ 
+{"ProspectId":"LD-2019-06-01-02931","ProductSku":"02","Revenue":25000,"SalesOwnerEmail":"adil.saleem@extramarks.com","SalesDate":"2019-06-03 09:07:34","Status":"Refund","mx_Custom_6":"INR","mx_Custom_7":"Credit Note","mx_Custom_8":"Credit Note","mx_Custom_9":"cbse_nursery","mx_Custom_5":"Full","mx_Custom_11":"2020-04-30 15:54:34","mx_Custom_12":"Subscription","mx_Custom_13":"Website","mx_Custom_14":"fc0099-113549","mx_Custom_10":"25000"}
+ 
+Response
+ 
+{"result": {"status": "Success", "Message": {"response_message": "Sales Activity Created Successfully","condution":True,"RelatedId": "LD-2019-06-01-02931", "SalesActivityId": 46913}}}

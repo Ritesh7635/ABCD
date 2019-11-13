@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3d39f92b-0e22-47c7-b8f0-1e39c674ccd0" activeEnvironment="Default" name="Lead capturing API" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="true"/>
+  <con:entry key="Add Settings" value="true"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="India State Name List 13-6"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="true"/>
+  <con:entry key="Root Folder" value="C:\Users\e7779\Documents\ExtramarksWebsite\18-06 india name list"/>
+  <con:entry key="Ignore Errors" value="true"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="true"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="06f7bbd9-1bd7-4829-b08b-8830e0deefbd" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://focus.extramarks.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://focus.extramarks.com</con:endpoint></con:endpoints><con:resource name="LeadCapture" path="/LeadManagement/LeadCapture" id="c8052793-78d5-47f1-88f8-a77924e0b749"><con:settings/><con:parameters/><con:method name="LeadCapture 1" id="5b8641e0-4a30-4373-aa3e-b6897a019b53" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>405 400</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:lead="http://focus.extramarks.com/LeadManagement/LeadCapture">lead:Response</con:element></con:representation><con:request name="Request 1" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2",
+"Value": "dikshash246@gmail.com"},
+{"Attribute":"SearchBy",
+"Value": "Phone"},
+{"Attribute":"FirstName",
+"Value": "sahdev"},
+{"Attribute":"LastName",
+"Value": "sharma"},
+{"Attribute":"Phone",
+"Value": "+91-8527321392"},
+{"Attribute":"EmailAddress",
+"Value": ""},
+{"Attribute":"mx_UserName",
+"Value": "837111392"},
+{"Attribute":"mx_City",
+"Value": "haziabad"},
+{"Attribute":"mx_State",
+"Value": "Uttar Pradesh"},
+{"Attribute":"mx_School_Board",
+"Value": "CBSE"},
+{"Attribute":"mx_Class2",
+"Value": "VI"},
+{"Attribute":"mx_User_Type",
+"Value": "Student"},
+{"Attribute":"mx_DeviceModel",
+"Value": "samsung sm-j701f"},
+{"Attribute":"mx_Platform",
+"Value": "android"},
+{"Attribute":"Source",
+"Value": "Direct Traffic"},
+{"Attribute":"mx_is_otp_verified",
+"Value": "Yes"},
+{"Attribute":"mx_Locality",
+"Value": "Siddharth Vihar"},
+{"Attribute":"mx_ZONE",
+"Value": "South"},
+{"Attribute":"mx_Source_Channel",
+"Value": "Mobile"},
+{"Attribute":"mx_Sub_Sourcee",
+"Value": "Learning App"},
+{"Attribute":"IsRegistered",
+"Value": "Yes"}]
+
+</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Request 1" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2",
+"Value": "dikshash246@gmail.com"},
+{"Attribute":"SearchBy",
+"Value": "Phone"},
+{"Attribute":"FirstName",
+"Value": "sahdev"},
+{"Attribute":"LastName",
+"Value": "sharma"},
+{"Attribute":"Phone",
+"Value": "+91-8527321392"},
+{"Attribute":"EmailAddress",
+"Value": ""},
+{"Attribute":"mx_UserName",
+"Value": "8527321392"},
+{"Attribute":"mx_City",
+"Value": "Ghaziabad"},
+{"Attribute":"mx_State",
+"Value": "Uttar Pradesh"},
+{"Attribute":"mx_School_Board",
+"Value": "CBSE"},
+{"Attribute":"mx_Class2",
+"Value": "VI"},
+{"Attribute":"mx_User_Type",
+"Value": "Student"},
+{"Attribute":"mx_DeviceModel",
+"Value": "samsung sm-j701f"},
+{"Attribute":"mx_Platform",
+"Value": "android"},
+{"Attribute":"Source",
+"Value": "Direct Traffic"},
+{"Attribute":"mx_is_otp_verified",
+"Value": "Yes"},
+{"Attribute":"mx_Locality",
+"Value": "Siddharth Vihar"},
+{"Attribute":"mx_ZONE",
+"Value": "South"},
+{"Attribute":"mx_Source_Channel",
+"Value": "Mobile"},
+{"Attribute":"mx_Sub_Sourcee",
+"Value": "Learning App"},
+{"Attribute":"IsRegistered",
+"Value": "Yes"}]
+
+</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Request 1" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2",
+ "Value": "2123233421"},
+{"Attribute":"FirstName",
+"Value": "diya"},
+{"Attribute":"LastName",
+"Value": "khati"},
+{"Attribute":"Phone",
+"Value": ""},
+{"Attribute":"EmailAddress",
+"Value": "khatilalitmohan3105@gmail.com"},
+{"Attribute":"mx_UserName", 
+"Value": "khatilalitmohan3105@gmail.com"},
+{"Attribute":"mx_City",
+"Value": "Dehradun"},
+{"Attribute":"mx_State",
+"Value": "Uttarakhand"},
+{"Attribute":"mx_School_Board",
+"Value": ""},
+{"Attribute":"mx_Class2",
+"Value": ""},
+{"Attribute":"mx_User_Type",
+"Value": "Student"},
+{"Attribute":"mx_DeviceModel",
+"Value": "em_website"},
+{"Attribute":"SearchBy",
+"Value": "EmailAddress"},
+{"Attribute":"ProspectID",
+"Value": "2db27ac1-83bb-4d56-8947-9006bc7b541f"},
+{"Attribute":"mx_Platform",
+"Value": "web"},
+{"Attribute":"Source", 
+"Value": "Direct Traffic"},
+{"Attribute":"mx_Source_Channel",
+"Value": "Website"},
+{"Attribute":"mx_Sub_Sourcee",
+"Value": "em_website"},
+{"Attribute":"mx_is_otp_verified", 
+"Value": "Yes"},
+{"Attribute":"IsRegistered", 
+"Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="row 2" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": ""},{"Attribute":"FirstName", "Value": "Maha"},{"Attribute":"LastName", "Value": "Lakshmi"},{"Attribute":"Phone", "Value": "+91-9884013737"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "9884013737"},{"Attribute":"mx_City", "Value": "Bengaluru"},{"Attribute":"mx_State", "Value": "Karnataka"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "xiaomi redmi 7"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Locality", "Value": "HSR LAYOUT"},{"Attribute":"mx_ZONE", "Value": "East"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="row12" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": ""},{"Attribute":"SearchBy", "Value": "Phone"},{"Attribute":"FirstName", "Value": "sharronda"},{"Attribute":"LastName", "Value": "rogers"},{"Attribute":"Phone", "Value": "+91-7863089379"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "7863089379"},{"Attribute":"mx_City", "Value": "Miami"},{"Attribute":"mx_State", "Value": "Florida"},{"Attribute":"mx_School_Board", "Value": "ICSE"},{"Attribute":"mx_Class2", "Value": "VI"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "motorola moto e (4)"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="row26" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": ""},{"Attribute":"FirstName", "Value": "Shalu"},{"Attribute":"LastName", "Value": "Khan"},{"Attribute":"Phone", "Value": "+91-7018283908"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "7018283908"},{"Attribute":"mx_City", "Value": "Kangra"},{"Attribute":"mx_State", "Value": "Himachal Pradesh"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "XII"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "tecno in5"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Row27" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": ""},{"Attribute":"FirstName", "Value": "Shalu"},{"Attribute":"LastName", "Value": "Khan"},{"Attribute":"Phone", "Value": "+91-7018283908"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "7018283908"},{"Attribute":"mx_City", "Value": "Kangra"},{"Attribute":"mx_State", "Value": "Himachal Pradesh"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "XII"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "tecno in5"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="row1622" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", 
+"Value": ""},
+{"Attribute":"FirstName",
+"Value": "Shalu"},
+{"Attribute":"LastName",
+"Value": "Khan"},
+{"Attribute":"Phone",
+"Value": "+91-7018283908"},
+{"Attribute":"EmailAddress",
+"Value": ""},
+{"Attribute":"mx_UserName",
+"Value": "7018283908"},
+{"Attribute":"mx_City",
+"Value": "Kangra"},
+{"Attribute":"mx_State",
+"Value": "Himachal Pradesh"},
+{"Attribute":"mx_School_Board",
+"Value": "CBSE"},
+{"Attribute":"mx_Class2",
+"Value": "XII"},
+{"Attribute":"mx_User_Type",
+"Value": "Student"},
+{"Attribute":"mx_DeviceModel",
+"Value": "tecno in5"},
+{"Attribute":"mx_Platform",
+"Value": "android"},
+{"Attribute":"Source",
+"Value": "Direct Traffic"},
+{"Attribute":"mx_is_otp_verified",
+"Value": "No"},{"Attribute":"mx_Source_Channel",
+"Value": "Mobile"},
+{"Attribute":"mx_Sub_Sourcee",
+"Value": "Learning App"},
+{"Attribute":"IsRegistered",
+"Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="1626" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-09652305715"},{"Attribute":"FirstName", "Value": "Cyrel"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "cyrelmanimtim@yahoo.com"},{"Attribute":"mx_UserName", "Value": "cyrelmanimtim@yahoo.com"},{"Attribute":"mx_City", "Value": "Salcedo"},{"Attribute":"mx_State", "Value": "Tarlac"},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "iphone"},{"Attribute":"mx_Platform", "Value": "ios"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="LeadCapture Fail Senario" id="5b8641e0-4a30-4373-aa3e-b6897a019b53" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>405 400</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:lead="http://focus.extramarks.com/LeadManagement/LeadCapture">lead:Response</con:element></con:representation><con:request name="Senario 1" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-9390820467"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Alina"},{"Attribute":"LastName", "Value": "Afzal"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "azamkhan79421@gmail.com"},{"Attribute":"mx_UserName", "Value": "azamkhan79421@gmail.com"},{"Attribute":"mx_City", "Value": "Hyderabad"},{"Attribute":"mx_State", "Value": "Telangana"},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "OMS"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 2" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": "AG0MIY"},{"Attribute":"SearchBy", "Value": "Phone"},{"Attribute":"FirstName", "Value": "samardhi"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-AG0MIY"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "AG0MIY"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 3" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2",
+"Value": "E8:93:09:CD:A9:20"},
+{"Attribute":"SearchBy", "Value": "Phone"},{"Attribute":"FirstName", "Value": "NawedAkhtar"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-E8:93:09:CD:A9:20"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "E8:93:09:CD:A9:20"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},
+{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 4" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": "K1WICX"},{"Attribute":"SearchBy", "Value": "Phone"},{"Attribute":"FirstName", "Value": "shruthik"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-K1WICX"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "K1WICX"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 5" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": "KBN21K"},{"Attribute":"SearchBy", "Value": "Phone"},{"Attribute":"FirstName", "Value": "dhivakar"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-KBN21K"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "KBN21K"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 6" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": "YJVVL5"},{"Attribute":"SearchBy", "Value": "Phone"},{"Attribute":"FirstName", "Value": "vanshika"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-YJVVL5"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "YJVVL5"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 7" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91- 907614026"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Dinesh"},{"Attribute":"LastName", "Value": "Ghadge"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "Dinesh.Ghadge1234@gmail.com"},{"Attribute":"mx_UserName", "Value": "Dinesh.Ghadge1234@gmail.com"},{"Attribute":"mx_City", "Value": "Mumbai"},{"Attribute":"mx_State", "Value": "Maharashtra"},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "OMS"},
+{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 8" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Manoj"},{"Attribute":"LastName", "Value": "Rajoria"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "manoj.rajoria@extramarks.in"},{"Attribute":"mx_UserName", "Value": "manoj.rajoria@extramarks.in"},{"Attribute":"mx_City", "Value": "Noida"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": "ICSE"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "K-12"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 9" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-8527402137"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Nupur"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "pooja1.mangla@gmail.com"},{"Attribute":"mx_UserName", "Value": "pooja1.mangla@gmail.com"},{"Attribute":"mx_City", "Value": "Delhi"},{"Attribute":"mx_State", "Value": "Delhi"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "VII"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "OMS"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 10" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Manoj"},{"Attribute":"LastName", "Value": "Rajoria"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "manoj.rajoria@extramarks.in"},{"Attribute":"mx_UserName", "Value": "manoj.rajoria@extramarks.in"},{"Attribute":"mx_City", "Value": "Noida"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": "ICSE"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "K-12"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 12" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Mohamed"},{"Attribute":"LastName", "Value": "Yehiya"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "mohamed.yehiya@extramarks.in"},{"Attribute":"mx_UserName", "Value": "mohamed.yehiya@extramarks.in"},{"Attribute":"mx_City", "Value": "Noida"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": "Tamil Nadu"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "em_website"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Senario 14" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Samantak"},{"Attribute":"LastName", "Value": "Ghosh"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "samantak.ghosh@extramarks.in"},{"Attribute":"mx_UserName", "Value": "samantak.ghosh@extramarks.in"},{"Attribute":"mx_City", "Value": "Abiramam"},{"Attribute":"mx_State", "Value": "Tamil Nadu"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "XII"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Senario 15 ask" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": "77HAUJ"},{"Attribute":"SearchBy", "Value": "Phone"},{"Attribute":"FirstName", "Value": "fuzail"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-77HAUJ"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "77HAUJ"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Senario 16" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2",
+"Value": ""},
+{"Attribute":"FirstName",
+"Value": "Ankush"},
+{"Attribute":"LastName",
+"Value": ""},
+{"Attribute":"Phone",
+"Value": "+91-8872643243"},
+{"Attribute":"EmailAddress",
+"Value": ""},
+{"Attribute":"mx_UserName",
+"Value": "8872643243"},
+{"Attribute":"mx_City",
+"Value": "Ludhiana"},
+{"Attribute":"mx_State",
+"Value": "Punjab"},
+{"Attribute":"mx_School_Board",
+"Value": "CBSE"},
+{"Attribute":"mx_Class2",
+"Value": "IX"},
+{"Attribute":"mx_User_Type",
+"Value": "Student"},
+{"Attribute":"mx_DeviceModel",
+"Value": "oppo cph1853"},
+{"Attribute":"mx_Platform",
+"Value": "android"},
+{"Attribute":"Source",
+"Value": "Direct Traffic"},
+{"Attribute":"mx_is_otp_verified", 
+"Value": "No"},
+{"Attribute":"mx_Source_Channel",
+"Value": "Mobile"},
+{"Attribute":"mx_Sub_Sourcee",
+"Value": "Learning App"},
+{"Attribute":"IsRegistered",
+"Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Copy of Senario 16" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": ""},{"Attribute":"FirstName", "Value": "Ankush"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-8872643243"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "8872643243"},{"Attribute":"mx_City", "Value": "Ludhiana"},{"Attribute":"mx_State", "Value": "Punjab"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "IX"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "oppo cph1853"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning Ap"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Copy of Copy of Senario 16" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": ""},{"Attribute":"FirstName", "Value": "munendra"},{"Attribute":"LastName", "Value": "singh"},{"Attribute":"Phone", "Value": "+91-9548176288"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "9548176288"},{"Attribute":"mx_City", "Value": "Mohanpur"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": "ICSE"},{"Attribute":"mx_Class2", "Value": "XII"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "xiaomi redmi 6a"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Copy of Copy of Copy of Senario 16" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": ""},{"Attribute":"FirstName", "Value": "Gaurav"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-7986308396"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "7986308396"},{"Attribute":"mx_City", "Value": "Jalandhar"},{"Attribute":"mx_State", "Value": "Punjab"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "XI"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "xiaomi redmi note 5 pro"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Copy of Copy of Copy of Copy of Senario 16" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": ""},{"Attribute":"FirstName", "Value": "Nirbhay"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-9334245332"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "9334245332"},{"Attribute":"mx_City", "Value": "Bihariganj"},{"Attribute":"mx_State", "Value": "Bihar"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "VI"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "xiaomi redmi 6a"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Copy of Copy of Copy of Copy of Copy of Senario 16" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": ""},{"Attribute":"FirstName", "Value": "Anshika"},{"Attribute":"LastName", "Value": "Varshney"},{"Attribute":"Phone", "Value": "+91-9758006877"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "9758006877"},{"Attribute":"mx_City", "Value": "Sambhal"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "xiaomi redmi y3"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Senario 16" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2",
+"Value": ""},
+{"Attribute":"FirstName",
+"Value": "Anshika"},
+{"Attribute":"LastName",
+"Value": "Varshney"},
+{"Attribute":"Phone", "Value": "+91-9758006877"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "9758006877"},{"Attribute":"mx_City", "Value": "Sambhal"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "xiaomi redmi y3"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Senario 16" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-9368051663"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "maeeha"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "aalamiqbl77@gmail.com"},{"Attribute":"mx_UserName", "Value": "aalamiqbl77@gmail.com"},{"Attribute":"mx_City", "Value": "Meerut"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "OMS"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Senario 16" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-0559188412"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "ann"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "r4resma@yahoo.co.in"},{"Attribute":"mx_UserName", "Value": "r4resma@yahoo.co.in"},{"Attribute":"mx_City", "Value": "Dubai"},{"Attribute":"mx_State", "Value": "Dubayy"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "III"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "samsung sm-a500f"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="ab7f128a-b0c9-4e2c-8831-dbcb430e1e1f" name="lead capturing 12-6"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8204cff5-e04a-4207-85b3-db43e99fe3b8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Happy Path" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="e90a30d9-f79a-46cf-9b88-abccfef7a27b"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2",
+"Value": "dikshash246@gmail.com"},
+{"Attribute":"SearchBy",
+"Value": "Phone"},
+{"Attribute":"FirstName",
+"Value": "sahdev"},
+{"Attribute":"LastName",
+"Value": "sharma"},
+{"Attribute":"Phone",
+"Value": "+91-9527321392"},
+{"Attribute":"EmailAddress",
+"Value": ""},
+{"Attribute":"mx_UserName",
+"Value": "8527321392"},
+{"Attribute":"mx_City",
+"Value": "Ghaziabad"},
+{"Attribute":"mx_State",
+"Value": "Uttar Pradesh"},
+{"Attribute":"mx_School_Board",
+"Value": "CBSE"},
+{"Attribute":"mx_Class2",
+"Value": "VI"},
+{"Attribute":"mx_User_Type",
+"Value": "Student"},
+{"Attribute":"mx_DeviceModel",
+"Value": "samsung sm-j701f"},
+{"Attribute":"mx_Platform",
+"Value": "android"},
+{"Attribute":"Source",
+"Value": "Direct Traffic"},
+{"Attribute":"mx_is_otp_verified",
+"Value": "Yes"},
+{"Attribute":"mx_Locality",
+"Value": "Siddharth Vihar"},
+{"Attribute":"mx_ZONE",
+"Value": "South"},
+{"Attribute":"mx_Source_Channel",
+"Value": "Mobile"},
+{"Attribute":"mx_Sub_Sourcee",
+"Value": "Learning App"},
+{"Attribute":"IsRegistered",
+"Value": "Yes"}]
+
+</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="fb27da4c-ded3-4ff2-ba2b-a0dc704a39ad" name="senario 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="be4c9e87-166c-460d-bdca-0fa6c763b0b2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="9c3e2289-9dbf-4d45-9aa7-461ead8a9e29"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture Fail Senario" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2",
+"Value": "+971-0555348087"},
+{"Attribute":"SearchBy", 
+"Value": "EmailAddress"},
+{"Attribute":"FirstName",
+"Value": "sam"},
+{"Attribute":"LastName",
+"Value": ""},
+{"Attribute":"Phone",
+"Value": ""},
+{"Attribute":"EmailAddress",
+"Value": "shanesam101@gmail.com"},
+{"Attribute":"mx_UserName",
+"Value": "shanesam101@gmail.com"},
+{"Attribute":"mx_City", "Value": "Dubai"},
+{"Attribute":"mx_State",
+"Value": "Dubayy"},
+{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "huawei pct-l29"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="b8c45cc7-cccb-475d-a3e4-9dc49ae9a823" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Copy of TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="5130f56e-e944-496a-ba25-af10c1f0fd1a"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture Fail Senario" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+971-0552833831"},{"Attribute":"FirstName", "Value": "Huzefa"},{"Attribute":"LastName", "Value": "pishori"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "pishori.zainab@gmail.com"},{"Attribute":"mx_UserName", "Value": "pishori.zainab@gmail.com"},{"Attribute":"mx_City", "Value": "Muzayri'"},{"Attribute":"mx_State", "Value": "Abu Zaby"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "IX"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "samsung sm-g610f"},{"Attribute":"mx_Platform", "Value": "android"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "No"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="7da12e38-dc18-414b-8d80-43690613c4ac" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Copy of Copy of TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="2898fd5a-ad18-4409-9c02-43ea127ef4ba"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture Fail Senario" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-8178455683"},{"Attribute":"FirstName", "Value": "Purnima"},{"Attribute":"LastName", "Value": "chauhan"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "Canilkumar18A@gmail.com"},{"Attribute":"mx_UserName", "Value": "Canilkumar18A@gmail.com"},{"Attribute":"mx_City", "Value": "New Delhi"},{"Attribute":"mx_State", "Value": "Delhi"},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "em_website"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="f545a0db-c7c1-4f42-b44e-91490bf2c7dc" name="India State Name List 13-6"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="fac0a0b6-8c77-4344-99fc-9cd81ea8c171" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="dcff14c9-d06a-43a7-b906-50743bbd1bca"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-2121212121"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Ashish"},{"Attribute":"LastName", "Value": "Jain"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "ashish.jain@extramarks.in"},{"Attribute":"mx_UserName", "Value": "ashish.jain@extramarks.in"},{"Attribute":"mx_City", "Value": "Noida"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "K-12"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="3454f201-6de8-422a-b796-fc178b371193" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="2" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="6de4ff20-465f-4df1-8f64-ed31611572de"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-2121212121"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Ashish"},{"Attribute":"LastName", "Value": "Jain"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "ashish.jain@extramarks.in"},{"Attribute":"mx_UserName", "Value": "ashish.jain@extramarks.in"},{"Attribute":"mx_City", "Value": "Noida"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "K-12"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="cbf03275-e6b9-478e-8eda-5081d2a5551d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="3" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="c82c5146-7235-4c5a-8c91-71bf49614121"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>
+[{"Attribute":"mx_Phone_2", 
+"Value": "+91-2121212121"},
+{"Attribute":"SearchBy",
+"Value": "EmailAddress"},
+{"Attribute":"FirstName", 
+"Value": "Ashish"},
+{"Attribute":"LastName",
+"Value": "Jain"},
+{"Attribute":"Phone",
+"Value": ""},
+{"Attribute":"EmailAddress",
+"Value": "ashish.jain@extramarks.in"},{"Attribute":"mx_UserName", "Value": "ashish.jain@extramarks.in"},{"Attribute":"mx_City", "Value": "Noida"},{"Attribute":"mx_State", "Value": "Uttar Pradesh"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "X"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"mx_Sub_Sourcee", "Value": "K-12"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="dbc34736-2e9b-48e8-9829-1482c5691cd3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="4" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="f063038f-88ce-475f-826a-32a39d559d9c"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": "MQPC2X"},{"Attribute":"SearchBy", "Value": "Phone"},{"Attribute":"FirstName", "Value": "Robin"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-2323232323"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "MQPC2X"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="894498cd-ee10-4b52-a907-18343c11b945" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="5" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="7df8e6cb-c47c-486d-9a56-bb0f0c86233a"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2",
+"Value": "+91-1025240609"},
+{"Attribute":"SearchBy",
+"Value": "EmailAddress"},
+{"Attribute":"FirstName",
+"Value": "Nora"},
+{"Attribute":"LastName",
+"Value": "Mashhour"},
+{"Attribute":"Phone",
+"Value": ""},
+{"Attribute":"EmailAddress", 
+"Value": "noramashhour@aucegypt.edu"},
+{"Attribute":"mx_UserName", 
+"Value": "noramashhour@aucegypt.edu"},
+{"Attribute":"mx_City", "Value": "-NA-"},
+{"Attribute":"mx_State", "Value": "Al Qahirah"},
+{"Attribute":"mx_School_Board", "Value": "ICSE"},
+{"Attribute":"mx_Class2", "Value": "VI"},
+{"Attribute":"mx_User_Type", "Value": "Student"},
+{"Attribute":"mx_DeviceModel",
+"Value": "iphone"}
+{"Attribute":"mx_Platform",
+"Value": "ios"},
+{"Attribute":"Source", 
+"Value": "Direct Traffic"},
+{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="03e808f7-03f1-4db7-941e-e08cd5270278" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="6" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="f60e8a0b-ec45-40e0-bce9-27ca3cd3fcd3"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Phone_2", "Value": "+91-1025240609"},{"Attribute":"SearchBy", "Value": "EmailAddress"},{"Attribute":"FirstName", "Value": "Nora"},{"Attribute":"LastName", "Value": "Mashhour"},{"Attribute":"Phone", "Value": ""},{"Attribute":"EmailAddress", "Value": "noramashhour@aucegypt.edu"},{"Attribute":"mx_UserName", "Value": "noramashhour@aucegypt.edu"},{"Attribute":"mx_City", "Value": "-NA-"},{"Attribute":"mx_State", "Value": "punjab"},{"Attribute":"mx_School_Board", "Value": "ICSE"},{"Attribute":"mx_Class2", "Value": "VI"},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "iphone"},{"Attribute":"mx_Platform", "Value": "ios"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_is_otp_verified", "Value": "Yes"},{"Attribute":"mx_Source_Channel", "Value": "Mobile"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2865b0a8-7841-4abc-afb4-9bb097ef6a9b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="8" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="887b6cfa-d220-49a6-b389-10dc6eb696cc"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", ]
+"Value": "arjunjaiswal@gmail.com"},
+{"Attribute":"SearchBy",
+"Value": "Phone"},{"Attribute":"FirstName", "Value": "Aashijaiswal"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-9472286050"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "9472286050"},{"Attribute":"mx_City", "Value": "Sitamarhi"},{"Attribute":"mx_State", "Value": "Bihar"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "V"},{"Attribute":"mx_User_Type", "Value": "Parent"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Locality", "Value": ""},{"Attribute":"mx_ZONE", "Value": "North"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c6e8d111-71c0-4492-9372-61a5ee3e2f40" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="9" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="8e29cacd-2a9a-4cef-ac76-45a4742519c1"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", ]
+"Value": "arjunjaiswal@gmail.com"},
+{"Attribute":"SearchBy",
+"Value": "Phone"},{"Attribute":"FirstName",
+"Value": "Aashijaiswal"},
+{"Attribute":"LastName", 
+"Value": ""},
+{"Attribute":"Phone",
+"Value": "+91-9472286050"},
+{"Attribute":"EmailAddress",
+"Value": ""},
+{"Attribute":"mx_UserName",
+"Value": "9472286050"},
+{"Attribute":"mx_City",
+"Value": "Sitamarhi"},
+{"Attribute":"mx_State",
+"Value": "Bihar"},
+{"Attribute":"mx_School_Board",
+"Value": "CBSE"},
+{"Attribute":"mx_Class2",
+"Value": "V"},
+{"Attribute":"mx_User_Type",
+"Value": "Parent"},
+{"Attribute":"mx_DeviceModel",
+"Value": "em_website"},
+{"Attribute":"mx_Platform",
+"Value": "web"},
+{"Attribute":"Source",
+"Value": "Direct Traffic"},
+{"Attribute":"mx_Locality",
+"Value": ""},
+{"Attribute":"mx_ZONE",
+"Value": "North"},
+{"Attribute":"mx_Sub_Sourcee",
+"Value": "Learning App"},
+{"Attribute":"mx_Source_Channel",
+"Value": "Website"},
+{"Attribute":"IsRegistered",
+"Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="04e296ab-1571-4d76-a9bc-1a8133d5d358" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="10" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="2f1fa772-ea61-4e99-bb9b-146bf48412aa"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2",
+"Value": "arjunjaiswal@gmail.com"},
+{"Attribute":"SearchBy", "Value": "Phone"},
+{"Attribute":"FirstName",
+"Value": "Aashijaiswal"},
+{"Attribute":"LastName",
+"Value": ""},
+{"Attribute":"Phone", "Value": "+91-9472286050"},
+{"Attribute":"EmailAddress", "Value": ""},
+{"Attribute":"mx_UserName", "Value": "9472286050"},
+{"Attribute":"mx_City", "Value": "Sitamarhi"},
+{"Attribute":"mx_State", "Value": "Bihar"},
+{"Attribute":"mx_School_Board", "Value": "CBSE"},
+{"Attribute":"mx_Class2", "Value": "VII"},
+{"Attribute":"mx_User_Type", "Value": "Parent"},
+{"Attribute":"mx_DeviceModel", "Value": "em_website"},
+{"Attribute":"mx_Platform", "Value": "web"},
+{"Attribute":"Source", "Value": "Direct Traffic"},
+{"Attribute":"mx_Locality", "Value": ""},
+{"Attribute":"mx_ZONE", "Value": "North"},
+{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},
+{"Attribute":"mx_Source_Channel", "Value": "Website"},
+{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="90e066d5-762f-42a9-80d8-9b76d2714957" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="11" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="0ee72fea-4999-46e8-b46c-99dcbd1f8ab3"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", 
+"Value": "arjunjaiswal@gmail.com"},
+{"Attribute":"SearchBy",
+"Value": "Phone"},
+{"Attribute":"FirstName",
+"Value": "Arjunjaiswal"},
+{"Attribute":"LastName",
+"Value": ""},
+{"Attribute":"Phone", 
+"Value": "+91-9472286050"},
+{"Attribute":"EmailAddress","Value": ""},{"Attribute":"mx_UserName", "Value": "9472286050"},{"Attribute":"mx_City", "Value": "Sitamarhi"},{"Attribute":"mx_State", "Value": "Bihar"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "VII"},{"Attribute":"mx_User_Type", "Value": "Parent"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Locality", "Value": ""},{"Attribute":"mx_ZONE", "Value": "North"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e72dde51-9bc2-4c50-9caa-7b066119fd0d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="12" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="180c87b2-d314-43fa-b018-454333cc75c2"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", "Value": "arjunjaiswal@gmail.com"},{"Attribute":"SearchBy", "Value": "Phone"},{"Attribute":"FirstName", "Value": "Arjunjaiswal"},{"Attribute":"LastName", "Value": ""},{"Attribute":"Phone", "Value": "+91-9472286050"},{"Attribute":"EmailAddress", "Value": ""},{"Attribute":"mx_UserName", "Value": "9472286050"},{"Attribute":"mx_City", "Value": "Sitamarhi"},{"Attribute":"mx_State", "Value": "Bihar"},{"Attribute":"mx_School_Board", "Value": "CBSE"},{"Attribute":"mx_Class2", "Value": "VII"},{"Attribute":"mx_User_Type", "Value": "Parent"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Locality", "Value": ""},{"Attribute":"mx_ZONE", "Value": "North"},{"Attribute":"mx_Sub_Sourcee", "Value": "Learning App"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="94a393a5-d16b-4477-a778-dbb11b3b4cfd" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="13" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="bdfa380b-71c6-4a05-a22c-7136ee7e0aca"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", 
+"Value": "es@gmail.com"},
+{"Attribute":"SearchBy",
+"Value": "Phone"},
+{"Attribute":"FirstName",
+"Value": "PARTH"},
+{"Attribute":"LastName",
+"Value": ""},
+{"Attribute":"Phone",
+"Value": "+91-3333333333"},
+{"Attribute":"EmailAddress", 
+"Value": ""},{"Attribute":"mx_UserName", "Value": "G2YWZM"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4e2afab6-3cff-4f26-844e-030a8a46c733" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="14" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="4517ca11-2c66-4d5c-b926-41c359ae1fdf"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", 
+"Value": "es@gmail.com"},
+{"Attribute":"SearchBy",
+"Value": "Phone"},
+{"Attribute":"FirstName",
+"Value": "PARTH"},
+{"Attribute":"LastName",
+"Value": ""},
+{"Attribute":"Phone",
+"Value": "+91-3333333333"},
+{"Attribute":"EmailAddress", 
+"Value": ""},{"Attribute":"mx_UserName", "Value": "G2YWZM"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c5629476-1d51-40ec-8af8-8768c23cc2b9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="15" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="36b96542-247c-4011-ad5e-541e3aecde2f"><con:settings/><con:config service="http://focus.extramarks.com" resourcePath="/LeadManagement/LeadCapture" methodName="LeadCapture 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="effb452a-bd71-4db1-a303-9c0d7913b473" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Accept" value="application/json"/>
+  &lt;con:entry key="Content-type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://staging.focus.extramarks.com</con:endpoint><con:request>[{"Attribute":"mx_Email_2", 
+"Value": "es@gmail.com"},
+{"Attribute":"SearchBy",
+"Value": "Phone"},
+{"Attribute":"FirstName",
+"Value": "PARTH"},
+{"Attribute":"LastName",
+"Value": ""},
+{"Attribute":"Phone",
+"Value": "+91-3333333333"},
+{"Attribute":"EmailAddress", 
+"Value": ""},{"Attribute":"mx_UserName", "Value": "G2YWZM"},{"Attribute":"mx_City", "Value": ""},{"Attribute":"mx_State", "Value": ""},{"Attribute":"mx_School_Board", "Value": ""},{"Attribute":"mx_Class2", "Value": ""},{"Attribute":"mx_User_Type", "Value": "Student"},{"Attribute":"mx_DeviceModel", "Value": "em_website"},{"Attribute":"mx_Platform", "Value": "web"},{"Attribute":"Source", "Value": "Direct Traffic"},{"Attribute":"mx_Sub_Sourcee", "Value": "toddler"},{"Attribute":"mx_Source_Channel", "Value": "Website"},{"Attribute":"IsRegistered", "Value": "Yes"}]</con:request><con:originalUri>http://focus.extramarks.com/LeadManagement/LeadCapture</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
